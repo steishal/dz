@@ -1,0 +1,23 @@
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main()
+        {
+            int k = int.Parse(Console.ReadLine());
+            double s = Math.Log(k, 3);
+            string str1 = s.ToString();
+            int m = (int)s;
+            string str2 = m.ToString();
+            int dlina1 = str1.Length;
+            int dlina2 = str2.Length;
+            if (dlina1 == dlina2)
+            {
+                Console.WriteLine("Это число подходит");
+            }
+            else
+                Console.WriteLine("Это число не подходит");
+        }
+    }
+}
