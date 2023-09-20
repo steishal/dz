@@ -1,0 +1,15 @@
+/Users/anastasia/Projects/k/k/bin/Debug/net7.0/k
+/Users/anastasia/Projects/k/k/bin/Debug/net7.0/k.deps.json
+/Users/anastasia/Projects/k/k/bin/Debug/net7.0/k.runtimeconfig.json
+/Users/anastasia/Projects/k/k/bin/Debug/net7.0/k.dll
+/Users/anastasia/Projects/k/k/bin/Debug/net7.0/k.pdb
+/Users/anastasia/Projects/k/k/obj/Debug/net7.0/k.csproj.AssemblyReference.cache
+/Users/anastasia/Projects/k/k/obj/Debug/net7.0/k.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anastasia/Projects/k/k/obj/Debug/net7.0/k.AssemblyInfoInputs.cache
+/Users/anastasia/Projects/k/k/obj/Debug/net7.0/k.AssemblyInfo.cs
+/Users/anastasia/Projects/k/k/obj/Debug/net7.0/k.csproj.CoreCompileInputs.cache
+/Users/anastasia/Projects/k/k/obj/Debug/net7.0/k.dll
+/Users/anastasia/Projects/k/k/obj/Debug/net7.0/refint/k.dll
+/Users/anastasia/Projects/k/k/obj/Debug/net7.0/k.pdb
+/Users/anastasia/Projects/k/k/obj/Debug/net7.0/k.genruntimeconfig.cache
+/Users/anastasia/Projects/k/k/obj/Debug/net7.0/ref/k.dll
