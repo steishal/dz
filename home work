@@ -1,0 +1,80 @@
+//1.11
+class Program
+{
+    private static double Read()
+    {
+        return double.Parse(Console.ReadLine());
+    }
+    static void Main()
+    {
+        double x1 = Read();
+        double y1 = Read();
+        double x2 = Read();
+        double y2 = Read();
+        double x3 = Read();
+        double y3 = Read();
+        double square = 0.5 * Math.Abs((x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)));
+        Console.WriteLine(square);
+    }
+}
+//2.2
+class Program
+{
+    private static int Read()
+    {
+        return int.Parse(Console.ReadLine());
+    }
+    static void Main()
+    {
+        int a1 = Read();
+        int a2 = Read();
+        int k = Read();
+        int ak = a1 + (a2 - a1) * (k - 1);
+        Console.WriteLine(ak);
+    }
+}
+//3.13
+class Program
+{
+    private static int Read()
+    {
+        return int.Parse(Console.ReadLine());
+    }
+    static void Main()
+    {
+        int maxNumber = -1000000000;
+        int cnt = 1;
+        string number = " ";
+        while (true)
+        {
+            int k = Read();
+            if (maxNumber == k)
+            {
+                cnt += 1;
+
+            }
+            if (maxNumber < k)
+            {
+                maxNumber = k;
+                cnt = 1;
+                number = k.ToString();
+
+            }
+            if (k == 0)
+            {
+                break;
+            }
+        }
+        Console.WriteLine("Самое большое число: " + number + " встретилось " + $"{cnt}" + " раза");
+    }
+}
+//4.4
+class Program
+{
+    static void Main()
+    {
+        string n = Console.ReadLine();
+        int nDouble = int.Parse(n.Substring(0, n.Length - 1)) * (int.Parse(n.Substring(0, n.Length - 1)) + 1) * 100 + 25;
+        Console.WriteLine(nDouble);
+    }
+}
