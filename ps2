@@ -1,0 +1,52 @@
+//2.1
+double eps = double.Parse(Console.ReadLine());
+Console.WriteLine(Pi(eps));
+Console.WriteLine(Math.PI);
+static double Pi(double eps)
+{
+    double pi = Math.PI;
+    double res = 1;
+    double k = 0;
+    while (Math.Abs(pi - 4 * res) > eps)
+    {
+        k++;
+        res += Math.Pow(-1, k) / (2 * k + 1);
+    }
+    return 4 * res;
+}
+// 1.12
+static long CosX(double x, double eps)
+{
+    double check = Math.Cos(x) * Math.Cos(x);
+    long counter = 1;
+    long factCounter = 2;
+    double res = 1;
+    long fact = 2;
+    long powOfTwo = 4;
+    double powOfX = x * x;
+    while (Math.Abs(check - res) > eps)
+    {
+        if (counter % 2 != 0)
+        {
+            res -= (powOfTwo * powOfX) / (2 * fact);
+        } else
+        {
+            res += (powOfTwo * powOfX) / (2 * fact);
+        }
+        counter += 1;
+        fact *= (factCounter + 1) * (factCounter + 2);
+        factCounter += 2;
+        powOfTwo *= 2;
+        powOfTwo *= 2;
+        powOfX *= x;
+        powOfX *= x;
+    }
+    return counter - 1;
+}
+
+static void Main()
+{
+    double x = double.Parse(Console.ReadLine());
+    double eps = double.Parse(Console.ReadLine());
+    Console.WriteLine(CosX(x, eps));
+}
